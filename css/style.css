@@ -3,14 +3,14 @@
 .banner{width:100%;
 	height:47vw;
 	background:gray;
-	background-image:url(../images/ba-0.jpg);
+	background-image:url(../images/ba4.jpeg);
 	background-repeat:no-repeat;
 	background-size:100% auto;
 	position:relative;}
 .banner .banner-txt{width:40%;
 	position:absolute;
-	top:10vw;
-	left:5vw;
+	bottom:15vw;
+	right:5vw;
 	height:20vw;
 	background:rgba(0,0,0,0.5);
 	padding:1vw;}
@@ -18,3 +18,15 @@
 	color:#fff;}
 .banner-txt p{font-size:2vw;
 	color:yellow;}
+@media screen and (max-width:500px){
+.banner .banner-txt{width:100%;
+	bottom:0vw;
+	right:0vw;}
+.banner-txt h2{font-size:5vw;
+	padding:1.5vw 0vw ;
+	text-align:center;}
+.banner-txt p{font-size:2vw;
+	padding:2vw;
+	text-align:center;
+	font-weight:bold;}	
+}
