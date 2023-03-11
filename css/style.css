@@ -1,0 +1,20 @@
+*{padding:0px;
+	margin:0px;}
+.banner{width:100%;
+	height:47vw;
+	background:gray;
+	background-image:url(../images/ba-0.jpg);
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	position:relative;}
+.banner .banner-txt{width:40%;
+	position:absolute;
+	top:10vw;
+	left:5vw;
+	height:20vw;
+	background:rgba(0,0,0,0.5);
+	padding:1vw;}
+.banner-txt h2{font-size:3vw;
+	color:#fff;}
+.banner-txt p{font-size:2vw;
+	color:yellow;}
