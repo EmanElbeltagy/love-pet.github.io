@@ -4,33 +4,189 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Le Rouge Home page</title>
-		<link rel="icon" href="images/icon.png" type="image/x-icon"/>
+		<title>Love Pet Home page</title>
+		<link rel="icon" href="images/logo.png" type="image/x-icon"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/all.css" rel="stylesheet"/>
 		<link href="css/style.css"  rel="stylesheet">
-		
+		<link href="css/xsmall-style.css"  rel="stylesheet">
+		<script src="js/bootstrap.min.js"> </script>
+		<script src="js/all.js"> </script>
 	</head>
 	<body>
 	<div class="banner">
-		
+		<ul>
+			<li> <a href="#">Home </a> </li>
+			<li> <a href="#">About </a> </li>
+			<li> <a href="#">Services </a> </li>
+			<li> <a href="#">Book </a> </li>
+			<li> <a href="#">Other </a> </li>
+			<li> <a href="#">Contact </a> </li>
+			<li class="logo"> <img src="images/logo.png" alt="logo" /> </li>
+		</ul>
 		<div class="banner-txt">
 			<h2> Animal Pet House </h2>
 			<p> this is fake paragraph this is for test not more this is fake paragraph this is for test not more
 				this is fake paragraph this is for test not more this is fake paragraph this is for test not more </p>
 		</div>
-	
-	
-	
-	
 	</div>
-	<!--<div class="container">
-		<div class="a-a">
-			<div class="a-b">
-				<h2> Animal Pet House </h2>
-				<p> this is fake paragraph this is for test not more this is fake paragraph this is for test not more
-					this is fake paragraph this is for test not more this is fake paragraph this is for test not more </p>
-				<button type="button"> Know More </button>	
+	
+	<div class="card-a">
+		<div class="card-a-body" id="body-card-a">
+			<label value="text" onclick="resizeToggleA(document.getElementById('body-card-a') , document.getElementById('text-card-a'))"> <i class="fa-solid fa-bowl-food icon-a"> </i> </label>
+			<div class="card-text" id="text-card-a">
+				<h3> Title Name </h3>
+				<p> This maybe means noThing because it's just for test the web site and the card </p>
+				<a href=""> Know More </a> 
 			</div>
 		</div>
-	<div>-->
+		
+		<div class="card-a-body" id="body-card-b">
+			<label onclick="resizeToggleB(document.getElementById('body-card-b') , document.getElementById('text-card-b'))"> <i class="fa-solid fa-gears icon-b"> </i> </label>
+			<div class="card-text" id="text-card-b">
+				<h3> Title Name </h3>
+				<p> This maybe means noThing because it's just for test the web site and the card </p>
+				<a href=""> Know More </a> 
+			</div>
+		</div>
+		
+		<div class="card-a-body" id="body-card-c">
+			<label onclick="resizeToggleC(document.getElementById('body-card-c') , document.getElementById('text-card-c'))"> <i class="fa-solid fa-hand-holding-heart icon-a"> </i> </label>
+			<div class="card-text" id="text-card-c">
+				<h3> Title Name </h3>
+				<p> This maybe means noThing because it's just for test the web site and the card </p>
+				<a href=""> Know More </a> 
+			</div>
+		</div>
+		
+		<div class="card-a-body" id="body-card-d">
+			<label onclick="resizeToggleD(document.getElementById('body-card-d') , document.getElementById('text-card-d'))"> <i class="fa-solid fa-users-line icon-b"> </i> </label>
+			<div class="card-text" id="text-card-d">
+				<h3> Title Name </h3>
+				<p> This maybe means noThing because it's just for test the web site and the card </p>
+				<a href=""> Know More </a> 
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="about-us">
+		<div class="about-txt">
+			<h2> About Us </h2>
+			<p> This is a websit talking about how to love your animal and take care about him and the perfect food and clinic
+				how to love your animal and take care about him and the perfect food and clinic
+				This is a websit talking about how to love your animal and take care about him and the perfect food and clinic</p>
+		</div>
+	</div>
+
+		<div class="head">
+			<h2> Care About Your Animal </h2>
+			<ul>
+				<li onclick ="categoryAll()" class="active" id="link1"> All </li>
+				<li onclick ="categoryCat()" id="link2"> Cats </li>
+				<li onclick="dogegoryDog()" id="link3"> Dogs </li>
+			</ul>
+		</div>
+	<div class="card-b">
+	
+		<div class="card-body" id="cat1">
+			<img src="images/cat1.jpeg" alt="image"/>
+			<div class="card-txt">
+				<h3> Cat Type </h3>
+				<p> this paragraph is talking about how to take care about your animal and how can you make a happy moments with him <p>
+				<a href=""> Know More </a>
+			</div>
+		</div>
+		
+		<div class="card-body" id="cat2">
+			<img src="images/cat2.jpeg" alt="image"/>
+			<div class="card-txt">
+				<h3> Cat Type </h3>
+				<p> this paragraph is talking about how to take care about your animal and how can you make a happy moments with him <p>
+				<a href=""> Know More </a>
+			</div>
+		</div>
+		
+		<div class="card-body" id="cat3">
+			<img src="images/cat3.jpeg" alt="image"/>
+			<div class="card-txt">
+				<h3> Cat Type </h3>
+				<p> this paragraph is talking about how to take care about your animal and how can you make a happy moments with him <p>
+				<a href=""> Know More </a>
+			</div>
+		</div>
+		
+		<div class="card-body " id="dog1">
+			<img src="images/dog1.jpeg" alt="image"/>
+			<div class="card-txt">
+				<h3> Dog Type </h3>
+				<p> this paragraph is talking about how to take care about your animal and how can you make a happy moments with him <p>
+				<a href=""> Know More </a>
+			</div>
+		</div>
+		<div class="card-body " id="dog2">
+			<img src="images/dog2.jpeg" alt="image"/>
+			<div class="card-txt">
+				<h3> Dog Type </h3>
+				<p> this paragraph is talking about how to take care about your animal and how can you make a happy moments with him <p>
+				<a href=""> Know More </a>
+			</div>
+		</div>
+		<div class="card-body " id="dog3">
+			<img src="images/dog3.jpeg" alt="image"/>
+			<div class="card-txt">
+				<h3> Dog Type </h3>
+				<p> this paragraph is talking about how to take care about your animal and how can you make a happy moments with him <p>
+				<a href=""> Know More </a>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<footer>
+		<div class="part-1 box">
+			<h5> Contact Us </h5>
+			<ul>
+				<li> <i class="fa-solid fa-location-dot">  </i> 36 ABC Street - Cairo - Egypt </li>
+				<li> <i class="fa-solid fa-location-dot">  </i> 36 XYZ Street - Cairo - Egypt </li>
+				<li> <i class="fa-solid fa-phone">  </i> 01093491298 </li>
+				<li> <i class="fa-solid fa-phone-volume">  </i> 01093491298 </li>
+			</ul>
+		</div>
+		<div class="part-2 box">
+			<h5> Social Media </h5>
+			<ul>
+				<li> <i class="fa-brands fa-facebook">  </i> Facebook </li>
+				<li> <i class="fa-brands fa-youtube">  </i> Youtube </li>
+				<li> <i class="fa-brands fa-twitter">  </i> Twitter</li>
+				<li> <i class="fa-brands fa-linkedin">  </i> LinkedIn </li>
+			</ul>
+		</div>
+		<div class="part-3 box">
+			<h5> Quick Links </h5>
+			<ul>
+				<li> Home </li>
+				<li> About </li>
+				<li> Services </li>
+				<li> Book </li>
+				<li> Other </li>
+				<li> Contact </li>
+			</ul>
+		</div>	
+		<div class="part-4 box">
+			<h5> Suggestion </h5>
+			<form>
+				<label>Email </label>
+				<input type="email" placeholder="Email" name="mail"/>
+				<label> Your Suggestion </label>
+				<textarea placeholder="Suggestion..." cols="2" rows="2"></textarea>
+				<button type="submit"> Submit </button>
+			</form>
+		</div>	
+	</footer>
+	
+	
+	<script src="js/property.js"> </script>
 	</body>
-</html>
+</html>	
