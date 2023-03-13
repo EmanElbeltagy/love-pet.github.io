@@ -1,0 +1,18 @@
+/* x-small max-width:575px;*/
+
+@media screen and (max-width:500px){
+.banner .banner-txt{width:100%;
+	bottom:0vw;
+	right:0vw;
+	height:25vw;}
+.banner-txt h2{font-size:5vw;
+	padding:1.5vw 0vw ;
+	text-align:center;}
+.banner-txt p{font-size:2vw;
+	padding:2vw;
+	text-align:center;
+	font-weight:bold;}	
+/* ################################################################################################# */
+/* ################################################################################################# */
+
+}

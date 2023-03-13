@@ -3,30 +3,233 @@
 .banner{width:100%;
 	height:47vw;
 	background:gray;
-	background-image:url(../images/ba4.jpeg);
+	background-image:url(../images/ba-1.jpg);
 	background-repeat:no-repeat;
 	background-size:100% auto;
 	position:relative;}
 .banner .banner-txt{width:40%;
 	position:absolute;
-	bottom:15vw;
+	bottom:10vw;
 	right:5vw;
-	height:20vw;
 	background:rgba(0,0,0,0.5);
-	padding:1vw;}
+	padding:2vw;}
 .banner-txt h2{font-size:3vw;
 	color:#fff;}
 .banner-txt p{font-size:2vw;
 	color:yellow;}
-@media screen and (max-width:500px){
-.banner .banner-txt{width:100%;
-	bottom:0vw;
-	right:0vw;}
-.banner-txt h2{font-size:5vw;
-	padding:1.5vw 0vw ;
+.banner ul{display:grid;
+	background:rgba(0,0,0,0.54);
+	justify-items:center;
+	align-items:center;
+	grid-template-columns: repeat(9,8vw);
+	grid-template-rows:5vw;}
+.banner ul li{list-style:none;}
+.banner ul li a{text-decoration:none;
+	color:#fff;
+	font-size:1.5vw;}
+.banner ul li a:hover{color:yellow;}
+.logo{grid-column:11/12;
+	grid-row:1/2;}
+.logo img{margin-top:1vw;
+	width:15vw;
+	cursor:pointer}
+	
+/* ################################################################################################# */
+/* ################################################################################################# */
+
+.card-a{
+	/*background:gray;
+	height:30vw;*/
+	padding:2.5vw 3vw;
+	display:grid;
+	grid-template-columns:repeat(4,25%);}
+.card-a .card-a-body{
+	/*background:yellow;
+	height:25vw;*/
+	margin:0vw 2vw;}
+.card-a .card-a-body label{display:block;
+	width:7vw;
+	height:7vw;
+	border-radius:50%;
+	margin:1vw auto;
+	background:gray;
+	position:relative;
+	cursor:pointer;}
+.card-a .card-a-body label:hover{background:black;}
+.card-a .card-a-body label .icon-a{font-size:3vw;
+	position:absolute;
+	top:2vw;
+	color:yellow;
+	left:2vw;}
+.card-a .card-a-body label .icon-b{font-size:3vw;
+	position:absolute;
+	top:2vw;
+	color:yellow;
+	left:1.5vw;}
+.card-a .card-a-body .card-text{padding:1vw;
+	display:none;}
+.card-a .card-a-body .card-text h3{font-size:3vw;
+	margin-bottom: 0.5vw;
 	text-align:center;}
-.banner-txt p{font-size:2vw;
-	padding:2vw;
+.card-a .card-a-body .card-text p{color:#fff;
+	font-weight:bold;
+	margin-bottom:1vw;
+	font-size:1.2vw;}
+.card-a .card-a-body .card-text a{display:block;
+	text-decoration:none;
+	color:yellow;
+	font-size:1vw;
+	background:black;
+	width:8vw;
 	text-align:center;
-	font-weight:bold;}	
+	height:2.5vw;
+	padding-top:0.3vw;
+	margin:0px auto;
+	transition:all 1s;}
+.card-a .card-a-body .card-text a:hover{border-radius:20px;}
+
+/* ################################################################################################# */
+/* ################################################################################################# */
+
+.about-us{background-image:url(../images/about.jpg);
+	background-repeat:no-repeat;
+	width:100%;
+	height:47vw;
+	background-size:100% auto;
+	position:relative;}
+.about-us .about-txt{width:35vw;
+	height:25vw;
+	/*background:rgba(10,10,10, 0.45);*/
+	position:absolute;
+	top:2.5vw;
+	left:33vw;}
+.about-us .about-txt h2{font-size:3.5vw;
+	color:yellow;
+	text-align:center;}
+.about-us .about-txt p{font-size:1.5vw;
+	color:#000;
+	padding:1vw 1vw;
 }
+
+/* ################################################################################################# */
+/* ################################################################################################# */
+
+.head{background:yellow;
+	width:100%;
+	padding:2.5vw 3vw;
+	height:8vw;
+	display:grid;
+	align-items:center;
+	grid-template-columns:repeat(3,33%);}
+.head h2{font-size:3vw;
+	grid-column:1/3;}
+.head ul{display:grid;
+	grid-template-columns:repeat(3,5vw);
+	padding-left:14vw;
+	grid-column:3/4;}
+.head ul li{list-style:none;
+	cursor:pointer;
+	font-size:1.5vw;
+	color:#fff;
+	font-weight:bold;}
+.head ul li:hover{color:#000;}
+.head ul .active{color:#000;}
+.card-b{width:100%;
+	display:grid;
+	grid-template-columns:repeat(3,25vw);
+	grid-gap:5vw 3vw;
+	background:yellow;
+	padding:1.4vw 7.5vw;}
+.card-b .card-body {
+	background:#fff;
+	padding:1vw;}
+.card-b .card-body:hover{transform:scale(1.1);
+	background:black;}
+.card-b .card-body img{width:100%;
+	height:20vw;
+	margin:0px auto;
+	display:block;}
+.card-b .card-body .card-txt{}
+.card-b .card-body .card-txt h3{color:yellow;
+	text-shadow:0.2vw 0.2vw 0.5vw yellow;
+	font-size:3vw;
+	text-align:center;
+	margin:1vw 0vw;}
+.card-b .card-body .card-txt p{font-size:1.5vw;
+	padding:0px;
+	color:yellow;
+	text-shadow:0.1vw 0.1vw 0.2vw black;}
+.card-b .card-body .card-txt a{display:block;
+	text-decoration:none;
+	color:#fff;
+	font-size:1vw;
+	background:yellow;
+	width:8vw;
+	text-align:center;
+	height:2.5vw;
+	padding-top:0.3vw;
+	margin:0px auto;
+	transition:all 1s;}
+.card-b .card-body .card-txt a:hover{background:#fff;
+	color:yellow;}
+.cat{display:block;}
+.dog{display:block;}
+
+/* ################################################################################################# */
+/* ################################################################################################# */	
+	
+footer{background:black;
+color:yellow;
+width:100%;
+display:grid;
+justify-items:center;
+grid-template-columns:repeat(4,25%);
+padding:2vw 2.5vw;}
+footer .box h5{font-size:2vw;
+	color:yellow;}
+footer .box li{list-style:none;
+	color:yellow;
+	font-weight:bold;
+	font-size:1.2vw;
+	cursor:pointer;}
+footer .part-2 li:hover{color:#fff;}
+footer .part-3 li:hover{color:#fff;}
+footer .part-4 form label{display:block;
+	color:yellow;
+	font-size:1.2vw;
+	font-weight:bold;}
+footer .part-4 form input{display:block;
+	width:18vw;
+	color:yellow;
+	font-size:1.2vw;
+	background:rgba(0,0,0,0);
+	outline:none;
+	border:2px solid yellow;
+	font-weight:bold;
+	margin:1.1vw 0vw;
+	padding-left:0.2vw;}
+footer .part-4 form input::placeholder{color:yellow;
+	font-size:1.2vw;
+	font-weight:bold;}
+footer .part-4 form textarea{width:18vw;
+	height:5vw;
+	display:block;
+	margin:1.1vw 0vw;
+	color:yellow;
+	font-size:1.2vw;
+	padding-left:0.2vw;
+	background:rgba(0,0,0,0);
+	outline:none;
+	border:2px solid yellow;
+	font-weight:bold;}
+footer .part-4 form button{width:10vw;
+	height:2vw;
+	color:black;
+	background:yellow;
+	border:none;
+	outline:none;
+	font-size:1.2vw;
+	font-weight:bold;
+	padding:.1vw 0vw;}
+footer .part-4 form button:hover{border-radius:10px;}
+footer .part-4 form textarea::placeholder{color:yellow;}
